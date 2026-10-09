@@ -1,0 +1,8 @@
+{
+  "name": "media-clean-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page for the Media Clean Telegram bot (@AIMediaclean_bot)",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}
