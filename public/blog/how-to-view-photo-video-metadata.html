@@ -1,0 +1,51 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Как посмотреть метаданные фото и видео: Windows, Mac, iPhone, Android — Media Clean</title><meta name="description" content="Как открыть служебные данные файла на компьютере и телефоне и что в них искать.">
+<link rel="canonical" href="__SITE__/blog/how-to-view-photo-video-metadata"><meta property="og:type" content="article"><meta property="og:title" content="Как посмотреть метаданные фото и видео: Windows, Mac, iPhone, Android"><meta property="og:description" content="Как открыть служебные данные файла на компьютере и телефоне и что в них искать."><meta property="og:image" content="__SITE__/og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Как посмотреть метаданные фото и видео: Windows, Mac, iPhone, Android", "inLanguage": "ru", "author": {"@type": "Organization", "name": "Media Clean"}, "mainEntityOfPage": "__SITE__/blog/how-to-view-photo-video-metadata", "datePublished": "2026-10-10"}</script><style>
+:root{--bg:#06122b;--card:#0d1f45;--text:#eaf1ff;--muted:#9bb0d6;--accent:#2fd6c0;--accent2:#3b82f6}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1200px 600px at 70% -10%,#12306e 0%,var(--bg) 60%);color:var(--text)}
+.wrap{max-width:860px;margin:0 auto;padding:24px 20px 64px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0 32px;font-weight:600}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0 0 16px}
+h2{font-size:26px;margin:48px 0 16px}
+p.lead{font-size:20px;color:var(--muted);margin:0 0 28px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#04122a;font-weight:700;padding:16px 28px;border-radius:14px;text-decoration:none;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid #1c3466;border-radius:16px;padding:20px}
+.card b{display:block;color:var(--accent);font-size:15px;margin-bottom:6px}
+details{background:var(--card);border:1px solid #1c3466;border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0}
+footer{margin-top:56px;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+article p,article li{color:#cfdcf5}article h2{font-size:24px}article{max-width:720px}</style></head>
+<body><div class="wrap"><nav><a href="/ru/">✨ Media Clean</a><a href="/blog/">Блог</a></nav>
+<article><h1 style="font-size:clamp(26px,5vw,40px)">Как посмотреть метаданные фото и видео: Windows, Mac, iPhone, Android</h1>
+<h2>Зачем смотреть метаданные</h2>
+<p>Метаданные показывают, чем и когда снят файл, а иногда где. Это полезно, если вы хотите проверить, что в файле нет лишнего, перед тем как его отправить или опубликовать.</p>
+<h2>Фото на компьютере</h2>
+<ul>
+<li>Windows: правый клик по файлу, «Свойства», вкладка «Подробно». Там видны камера, дата съёмки и координаты, если они есть.</li>
+<li>Mac: откройте фото в программе «Просмотр», меню «Инструменты», «Показать инспектор». Во вкладках есть данные EXIF и GPS.</li>
+<li>Для полного списка полей используйте бесплатную программу ExifTool.</li>
+</ul>
+<h2>Фото на телефоне</h2>
+<ul>
+<li>iPhone: откройте снимок в приложении «Фото» и нажмите значок информации. Видно устройство, размер файла и место съёмки на карте.</li>
+<li>Android: откройте фото в галерее и смахните вверх или нажмите «Сведения». Покажет дату, устройство и местоположение, если оно записано.</li>
+</ul>
+<p>Приложение показывает лишь часть данных. Скрытые поля вроде XMP или записей программ можно увидеть только в специальном просмотрщике.</p>
+<h2>Видео</h2>
+<p>Для видео подойдёт бесплатная программа MediaInfo. Она показывает контейнер, кодеки, дату создания и служебные теги. ExifTool тоже умеет читать видео.</p>
+<h2>Что искать в результате</h2>
+<p>1. Координаты: широта и долгота.</p>
+<p>2. Название программы или генератора, которой создан файл.</p>
+<p>3. Записи о происхождении: поля с упоминанием алгоритма, ИИ или подписью Content Credentials.</p>
+<p>4. Лишние текстовые поля: описания, комментарии, параметры генерации.</p>
+<h2>Если нашли лишнее</h2>
+<p>Файл можно очистить. Фото пересобирают из пикселей, видео перекодируют. Это делает бот <a href="https://t.me/AIMediaclean_bot?start=article" style="color:var(--accent)">@AIMediaclean_bot</a>: отправляете файл, выбираете формат, скачиваете. До 20 МБ. После очистки проверьте файл тем же способом.</p>
+<p>Очистка метаданных не отменяет правил площадок об отметке ИИ-контента.</p>
+<p style="margin-top:32px"><a class="btn" href="https://t.me/AIMediaclean_bot?start=blog">Открыть бота в Telegram →</a></p></article>
+<footer><a href="/blog/">Все статьи</a> · <a href="/ru/">Media Clean</a> · <a href="https://t.me/AIMediaclean_bot">@AIMediaclean_bot</a></footer></div></body></html>
