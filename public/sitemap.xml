@@ -2,4 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url><loc>__SITE__/</loc><xhtml:link rel="alternate" hreflang="en" href="__SITE__/"/><xhtml:link rel="alternate" hreflang="ru" href="__SITE__/ru/"/></url>
 <url><loc>__SITE__/ru/</loc><xhtml:link rel="alternate" hreflang="ru" href="__SITE__/ru/"/><xhtml:link rel="alternate" hreflang="en" href="__SITE__/"/></url>
+<url><loc>__SITE__/blog/</loc></url>
+<url><loc>__SITE__/blog/what-are-metadata-in-ai-files</loc></url>
+<url><loc>__SITE__/blog/checklist-before-posting-ai-media</loc></url>
+<url><loc>__SITE__/blog/false-ai-label-on-real-photo</loc></url>
+<url><loc>__SITE__/blog/remove-geolocation-from-photo</loc></url>
+<url><loc>__SITE__/blog/remove-video-metadata</loc></url>
 </urlset>
