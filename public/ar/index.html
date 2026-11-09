@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Clean — حذف بيانات الذكاء الاصطناعي الوصفية من الصور والفيديو (بوت تيليجرام)</title>
+<meta name="description" content="بوت تيليجرام مجاني ينظّف الصور والفيديو قبل النشر على إنستغرام وتيك توك: يحذف سجلات توليد الذكاء الاصطناعي وبيانات EXIF والموقع وC2PA. الفيديو بجودته الأصلية، حتى 20 ميغابايت.">
+<link rel="canonical" href="__SITE__/ar/">
+<link rel="alternate" hreflang="en" href="__SITE__/">
+<link rel="alternate" hreflang="ru" href="__SITE__/ru/">
+<link rel="alternate" hreflang="zh-Hans" href="__SITE__/zh/">
+<link rel="alternate" hreflang="ar" href="__SITE__/ar/">
+<link rel="alternate" hreflang="x-default" href="__SITE__/">
+<meta property="og:type" content="website"><meta property="og:title" content="Media Clean — حذف بيانات الذكاء الاصطناعي الوصفية من الصور والفيديو (بوت تيليجرام)">
+<meta property="og:description" content="بوت تيليجرام مجاني ينظّف الصور والفيديو قبل النشر على إنستغرام وتيك توك: يحذف سجلات توليد الذكاء الاصطناعي وبيانات EXIF والموقع وC2PA. الفيديو بجودته الأصلية، حتى 20 ميغابايت."><meta property="og:url" content="__SITE__/ar/">
+<meta property="og:image" content="__SITE__/og.png"><meta property="og:locale" content="ar">
+<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#06122b">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Media Clean", "applicationCategory": "MultimediaApplication", "operatingSystem": "Telegram", "url": "https://t.me/AIMediaclean_bot", "inLanguage": "ar", "description": "بوت تيليجرام مجاني ينظّف الصور والفيديو قبل النشر على إنستغرام وتيك توك: يحذف سجلات توليد الذكاء الاصطناعي وبيانات EXIF والموقع وC2PA. الفيديو بجودته الأصلية، حتى 20 ميغابايت.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "inLanguage": "ar", "mainEntity": [{"@type": "Question", "name": "ماذا يحذف Media Clean؟", "acceptedAnswer": {"@type": "Answer", "text": "يحذف السجلات التقنية داخل ملفات الصور والفيديو، ومنها معلومات أدوات توليد الذكاء الاصطناعي والجهاز وموقع GPS وبيانات اعتماد المحتوى C2PA. ولكي يُعرض الملف بشكل طبيعي على الهواتف، يكتب البوت بيانات جهاز محايدة (Apple iPhone) بدل السجلات الأصلية."}}, {"@type": "Question", "name": "هل تنخفض جودة الفيديو؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. فيديو H.264 الشائع يُعاد تغليفه فقط دون إعادة ترميز، فالصورة مطابقة للأصل. الصيغ الأخرى مثل HEVC تُحوَّل إلى H.264 بجودة عالية."}}, {"@type": "Question", "name": "ما الحد الأقصى لحجم الملف؟", "acceptedAnswer": {"@type": "Answer", "text": "حتى 20 ميغابايت لكل ملف."}}, {"@type": "Question", "name": "هل يخفي المحتوى المولَّد بالذكاء الاصطناعي عن إنستغرام أو تيك توك؟", "acceptedAnswer": {"@type": "Answer", "text": "لا يضمن ذلك. البوت ينظّف البيانات الوصفية فقط، وقد تكتشف المنصات المحتوى المولَّد بطرق أخرى، وتبقى قواعدها بشأن الإفصاح سارية. أفصح عن المحتوى حيث يُطلب ذلك."}}, {"@type": "Question", "name": "من أين أبدأ؟", "acceptedAnswer": {"@type": "Answer", "text": "افتح @AIMediaclean_bot في تيليجرام واضغط «ابدأ»."}}]}]}</script>
+<style>
+:root{--bg:#06122b;--card:#0d1f45;--text:#eaf1ff;--muted:#9bb0d6;--accent:#2fd6c0;--accent2:#3b82f6}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1200px 600px at 70% -10%,#12306e 0%,var(--bg) 60%);color:var(--text)}
+.wrap{max-width:860px;margin:0 auto;padding:24px 20px 64px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0 32px;font-weight:600}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0 0 16px}
+h2{font-size:26px;margin:48px 0 16px}
+p.lead{font-size:20px;color:var(--muted);margin:0 0 28px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#04122a;font-weight:700;padding:16px 28px;border-radius:14px;text-decoration:none;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid #1c3466;border-radius:16px;padding:20px}
+.card b{display:block;color:var(--accent);font-size:15px;margin-bottom:6px}
+details{background:var(--card);border:1px solid #1c3466;border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0}
+footer{margin-top:56px;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+body{direction:rtl;text-align:right}nav{flex-direction:row-reverse}article p,article li{color:#cfdcf5}article h2{font-size:24px}article{max-width:720px}</style>
+</head>
+<body>
+<div class="wrap">
+<nav><span>✨ Media Clean</span><span><a href="/">English</a> · <a href="/ru/">Русский</a> · <a href="/zh/">中文</a> · <a href="/ar/">العربية</a></span></nav>
+<h1>احذف بيانات الذكاء الاصطناعي الوصفية من الصور والفيديو</h1>
+<p class="lead">نظّف ملفاتك قبل النشر على إنستغرام وتيك توك وغيرها. تُعاد بناء الصور من البكسلات، ويبقى الفيديو بجودته الأصلية، دون سجلات التوليد أو الجهاز أو الموقع الموجودة في الملف الأصلي.</p>
+<a class="btn" href="https://t.me/AIMediaclean_bot?start=site_ar">افتح في تيليجرام ←</a>
+<h2>طريقة الاستخدام</h2>
+<div class="grid">
+<div class="card"><b>١ · أرسل</b>أرسل صورة أو فيديو إلى البوت في تيليجرام، حتى 20 ميغابايت. يدعم JPEG وPNG وWebP وHEIC (صور آيفون) وMP4/MOV.</div>
+<div class="card"><b>٢ · اختر</b>اختر الصيغة: JPEG أو PNG للصور، وMP4 للفيديو.</div>
+<div class="card"><b>٣ · حمّل</b>خلال ثوانٍ يصلك الملف النظيف في المحادثة نفسها وجاهزًا للنشر.</div>
+</div>
+<h2>ماذا تحصل</h2>
+<div class="grid">
+<div class="card"><b>الصور</b>تُعاد بناؤها من البكسلات، فلا تنتقل سجلات EXIF وXMP وIPTC وC2PA من الملف الأصلي. لا يُصغَّر حجم الصورة.</div>
+<div class="card"><b>الفيديو</b>فيديو H.264 لا يُعاد ضغطه: الإطارات مطابقة للأصل تمامًا، وتُحذف البيانات الوصفية ومعلومات المُرمِّز.</div>
+<div class="card"><b>التحميل بالرابط</b>أرسل رابط إنستغرام أو تيك توك، فيحمّل البوت الفيديو بجودة النشر الأصلية وينظّف بياناته.</div>
+<div class="card"><b>دون تثبيت</b>يعمل داخل تيليجرام على الهاتف والكمبيوتر، والواجهة متوفرة بالعربية.</div>
+</div>
+<h2>أسئلة شائعة</h2>
+<details><summary>ماذا يحذف Media Clean؟</summary><p>يحذف السجلات التقنية داخل ملفات الصور والفيديو، ومنها معلومات أدوات توليد الذكاء الاصطناعي والجهاز وموقع GPS وبيانات اعتماد المحتوى C2PA. ولكي يُعرض الملف بشكل طبيعي على الهواتف، يكتب البوت بيانات جهاز محايدة (Apple iPhone) بدل السجلات الأصلية.</p></details>
+<details><summary>هل تنخفض جودة الفيديو؟</summary><p>لا. فيديو H.264 الشائع يُعاد تغليفه فقط دون إعادة ترميز، فالصورة مطابقة للأصل. الصيغ الأخرى مثل HEVC تُحوَّل إلى H.264 بجودة عالية.</p></details>
+<details><summary>ما الحد الأقصى لحجم الملف؟</summary><p>حتى 20 ميغابايت لكل ملف.</p></details>
+<details><summary>هل يخفي المحتوى المولَّد بالذكاء الاصطناعي عن إنستغرام أو تيك توك؟</summary><p>لا يضمن ذلك. البوت ينظّف البيانات الوصفية فقط، وقد تكتشف المنصات المحتوى المولَّد بطرق أخرى، وتبقى قواعدها بشأن الإفصاح سارية. أفصح عن المحتوى حيث يُطلب ذلك.</p></details>
+<details><summary>من أين أبدأ؟</summary><p>افتح @AIMediaclean_bot في تيليجرام واضغط «ابدأ».</p></details>
+<h2>مقالات</h2>
+<ul><li><a href="/blog/ar-remove-ai-metadata" style="color:var(--accent)">كيف تحذف بيانات الذكاء الاصطناعي الوصفية من الصور والفيديو قبل النشر على إنستغرام وتيك توك</a></li>
+<li><a href="/blog/ar-false-ai-label" style="color:var(--accent)">إنستغرام وضع «معلومات الذكاء الاصطناعي» على صورة حقيقية: لماذا وماذا تفعل</a></li></ul>
+<p style="margin-top:36px"><a class="btn" href="https://t.me/AIMediaclean_bot?start=site_ar">نظّف ملفًا الآن ←</a></p>
+<footer>© Media Clean · <a href="https://t.me/AIMediaclean_bot">@AIMediaclean_bot</a> · <a href="/">English</a> · <a href="/ru/">Русский</a> · <a href="/zh/">中文</a> · <a href="/ar/">العربية</a></footer>
+</div>
+</body>
+</html>

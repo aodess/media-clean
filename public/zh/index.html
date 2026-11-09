@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Clean — 删除照片和视频中的 AI 元数据（Telegram 机器人）</title>
+<meta name="description" content="免费 Telegram 机器人：发布到 Instagram、TikTok、小红书之前，删除照片和视频里的 AI 生成记录、EXIF、GPS 定位和 C2PA 信息。视频保持原画质，最大 20 MB。">
+<link rel="canonical" href="__SITE__/zh/">
+<link rel="alternate" hreflang="en" href="__SITE__/">
+<link rel="alternate" hreflang="ru" href="__SITE__/ru/">
+<link rel="alternate" hreflang="zh-Hans" href="__SITE__/zh/">
+<link rel="alternate" hreflang="ar" href="__SITE__/ar/">
+<link rel="alternate" hreflang="x-default" href="__SITE__/">
+<meta property="og:type" content="website"><meta property="og:title" content="Media Clean — 删除照片和视频中的 AI 元数据（Telegram 机器人）">
+<meta property="og:description" content="免费 Telegram 机器人：发布到 Instagram、TikTok、小红书之前，删除照片和视频里的 AI 生成记录、EXIF、GPS 定位和 C2PA 信息。视频保持原画质，最大 20 MB。"><meta property="og:url" content="__SITE__/zh/">
+<meta property="og:image" content="__SITE__/og.png"><meta property="og:locale" content="zh_Hans">
+<meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#06122b">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Media Clean", "applicationCategory": "MultimediaApplication", "operatingSystem": "Telegram", "url": "https://t.me/AIMediaclean_bot", "inLanguage": "zh-Hans", "description": "免费 Telegram 机器人：发布到 Instagram、TikTok、小红书之前，删除照片和视频里的 AI 生成记录、EXIF、GPS 定位和 C2PA 信息。视频保持原画质，最大 20 MB。", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "inLanguage": "zh-Hans", "mainEntity": [{"@type": "Question", "name": "Media Clean 会删除什么？", "acceptedAnswer": {"@type": "Answer", "text": "删除照片和视频文件内部的技术记录，包括 AI 生成工具写入的信息、拍摄设备、GPS 定位和 C2PA 内容凭证。为了让文件在手机上正常显示，机器人会写入中性的设备信息（Apple iPhone），而不是原来的记录。"}}, {"@type": "Question", "name": "视频画质会变差吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。常见的 H.264 视频只是重新封装，不重新编码，画面与原片完全相同。其他编码格式（如 HEVC）会以高质量转换为 H.264。"}}, {"@type": "Question", "name": "文件大小限制是多少？", "acceptedAnswer": {"@type": "Answer", "text": "每个文件最大 20 MB。"}}, {"@type": "Question", "name": "能让 Instagram 或 TikTok 识别不出 AI 内容吗？", "acceptedAnswer": {"@type": "Answer", "text": "不能保证。机器人只清理文件元数据，平台仍可能通过其他方式识别或标注 AI 内容，平台关于标注 AI 内容的规则依然适用。需要标注的地方请如实标注。"}}, {"@type": "Question", "name": "从哪里开始？", "acceptedAnswer": {"@type": "Answer", "text": "在 Telegram 中打开 @AIMediaclean_bot，点击“开始”。"}}]}]}</script>
+<style>
+:root{--bg:#06122b;--card:#0d1f45;--text:#eaf1ff;--muted:#9bb0d6;--accent:#2fd6c0;--accent2:#3b82f6}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1200px 600px at 70% -10%,#12306e 0%,var(--bg) 60%);color:var(--text)}
+.wrap{max-width:860px;margin:0 auto;padding:24px 20px 64px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:8px 0 32px;font-weight:600}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:0 0 16px}
+h2{font-size:26px;margin:48px 0 16px}
+p.lead{font-size:20px;color:var(--muted);margin:0 0 28px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#04122a;font-weight:700;padding:16px 28px;border-radius:14px;text-decoration:none;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid #1c3466;border-radius:16px;padding:20px}
+.card b{display:block;color:var(--accent);font-size:15px;margin-bottom:6px}
+details{background:var(--card);border:1px solid #1c3466;border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0}
+footer{margin-top:56px;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+article p,article li{color:#cfdcf5}article h2{font-size:24px}article{max-width:720px}</style>
+</head>
+<body>
+<div class="wrap">
+<nav><span>✨ Media Clean</span><span><a href="/">English</a> · <a href="/ru/">Русский</a> · <a href="/zh/">中文</a> · <a href="/ar/">العربية</a></span></nav>
+<h1>删除照片和视频中的 AI 元数据</h1>
+<p class="lead">在发布到 Instagram、TikTok 等平台之前清理文件。照片根据像素重新生成，视频保持原始画质，文件里原有的生成记录、拍摄设备和定位信息都不会保留。</p>
+<a class="btn" href="https://t.me/AIMediaclean_bot?start=site_zh">在 Telegram 中打开 →</a>
+<h2>使用方法</h2>
+<div class="grid">
+<div class="card"><b>1 · 发送</b>在 Telegram 里把照片或视频发给机器人，最大 20 MB。支持 JPEG、PNG、WebP、HEIC（iPhone 照片）和 MP4/MOV。</div>
+<div class="card"><b>2 · 选择</b>选择需要的格式：照片可选 JPEG 或 PNG，视频为 MP4。</div>
+<div class="card"><b>3 · 下载</b>几秒钟后在同一个聊天中收到干净的文件，可以直接发布。</div>
+</div>
+<h2>你会得到什么</h2>
+<div class="grid">
+<div class="card"><b>照片</b>从像素重新生成，原文件中的 EXIF、XMP、IPTC、C2PA 记录不会被带过去。尺寸不缩小。</div>
+<div class="card"><b>视频</b>H.264 视频不重新压缩，画面与原片逐帧一致；元数据、章节和编码器信息被删除。</div>
+<div class="card"><b>链接下载</b>发送 Instagram 或 TikTok 链接，机器人按发布时的原始画质下载视频，并清理元数据。</div>
+<div class="card"><b>无需安装</b>在手机和电脑上的 Telegram 中直接使用，界面支持简体中文。</div>
+</div>
+<h2>常见问题</h2>
+<details><summary>Media Clean 会删除什么？</summary><p>删除照片和视频文件内部的技术记录，包括 AI 生成工具写入的信息、拍摄设备、GPS 定位和 C2PA 内容凭证。为了让文件在手机上正常显示，机器人会写入中性的设备信息（Apple iPhone），而不是原来的记录。</p></details>
+<details><summary>视频画质会变差吗？</summary><p>不会。常见的 H.264 视频只是重新封装，不重新编码，画面与原片完全相同。其他编码格式（如 HEVC）会以高质量转换为 H.264。</p></details>
+<details><summary>文件大小限制是多少？</summary><p>每个文件最大 20 MB。</p></details>
+<details><summary>能让 Instagram 或 TikTok 识别不出 AI 内容吗？</summary><p>不能保证。机器人只清理文件元数据，平台仍可能通过其他方式识别或标注 AI 内容，平台关于标注 AI 内容的规则依然适用。需要标注的地方请如实标注。</p></details>
+<details><summary>从哪里开始？</summary><p>在 Telegram 中打开 @AIMediaclean_bot，点击“开始”。</p></details>
+<h2>文章</h2>
+<ul><li><a href="/blog/zh-remove-ai-metadata" style="color:var(--accent)">如何删除照片和视频中的 AI 元数据（Instagram、TikTok 发布前）</a></li>
+<li><a href="/blog/zh-false-ai-label" style="color:var(--accent)">Instagram 把真实照片标成“AI 信息”怎么办？原因和解决办法</a></li></ul>
+<p style="margin-top:36px"><a class="btn" href="https://t.me/AIMediaclean_bot?start=site_zh">立即清理文件 →</a></p>
+<footer>© Media Clean · <a href="https://t.me/AIMediaclean_bot">@AIMediaclean_bot</a> · <a href="/">English</a> · <a href="/ru/">Русский</a> · <a href="/zh/">中文</a> · <a href="/ar/">العربية</a></footer>
+</div>
+</body>
+</html>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-<url><loc>__SITE__/</loc><xhtml:link rel="alternate" hreflang="en" href="__SITE__/"/><xhtml:link rel="alternate" hreflang="ru" href="__SITE__/ru/"/></url>
-<url><loc>__SITE__/ru/</loc><xhtml:link rel="alternate" hreflang="ru" href="__SITE__/ru/"/><xhtml:link rel="alternate" hreflang="en" href="__SITE__/"/></url>
+<url><loc>__SITE__/</loc><xhtml:link rel="alternate" hreflang="en" href="__SITE__/"/><xhtml:link rel="alternate" hreflang="ru" href="__SITE__/ru/"/><xhtml:link rel="alternate" hreflang="zh-Hans" href="__SITE__/zh/"/><xhtml:link rel="alternate" hreflang="ar" href="__SITE__/ar/"/></url>
+<url><loc>__SITE__/ru/</loc><xhtml:link rel="alternate" hreflang="en" href="__SITE__/"/><xhtml:link rel="alternate" hreflang="ru" href="__SITE__/ru/"/><xhtml:link rel="alternate" hreflang="zh-Hans" href="__SITE__/zh/"/><xhtml:link rel="alternate" hreflang="ar" href="__SITE__/ar/"/></url>
+<url><loc>__SITE__/zh/</loc><xhtml:link rel="alternate" hreflang="en" href="__SITE__/"/><xhtml:link rel="alternate" hreflang="ru" href="__SITE__/ru/"/><xhtml:link rel="alternate" hreflang="zh-Hans" href="__SITE__/zh/"/><xhtml:link rel="alternate" hreflang="ar" href="__SITE__/ar/"/></url>
+<url><loc>__SITE__/ar/</loc><xhtml:link rel="alternate" hreflang="en" href="__SITE__/"/><xhtml:link rel="alternate" hreflang="ru" href="__SITE__/ru/"/><xhtml:link rel="alternate" hreflang="zh-Hans" href="__SITE__/zh/"/><xhtml:link rel="alternate" hreflang="ar" href="__SITE__/ar/"/></url>
 <url><loc>__SITE__/blog/</loc></url>
 <url><loc>__SITE__/blog/what-are-metadata-in-ai-files</loc></url>
 <url><loc>__SITE__/blog/checklist-before-posting-ai-media</loc></url>
@@ -10,4 +12,8 @@
 <url><loc>__SITE__/blog/how-to-view-photo-video-metadata</loc></url>
 <url><loc>__SITE__/blog/what-is-c2pa-content-credentials</loc></url>
 <url><loc>__SITE__/blog/remove-video-metadata</loc></url>
+<url><loc>__SITE__/blog/zh-remove-ai-metadata</loc></url>
+<url><loc>__SITE__/blog/zh-false-ai-label</loc></url>
+<url><loc>__SITE__/blog/ar-remove-ai-metadata</loc></url>
+<url><loc>__SITE__/blog/ar-false-ai-label</loc></url>
 </urlset>

@@ -4,10 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Media Clean — remove AI metadata from photos and videos (Telegram bot)</title>
-<meta name="description" content="Telegram bot that cleans photos and videos before you post to Instagram, TikTok and other apps. Photos are rebuilt from pixels, videos re-encoded without original generation records. Up to 20 MB.">
+<meta name="description" content="Telegram bot that cleans photos and videos before you post to Instagram, TikTok and other apps. Photos are rebuilt from pixels, videos keep their original quality without the original generation records. Up to 20 MB.">
 <link rel="canonical" href="__SITE__/">
 <link rel="alternate" hreflang="en" href="__SITE__/">
 <link rel="alternate" hreflang="ru" href="__SITE__/ru/">
+<link rel="alternate" hreflang="zh-Hans" href="__SITE__/zh/">
+<link rel="alternate" hreflang="ar" href="__SITE__/ar/">
 <link rel="alternate" hreflang="x-default" href="__SITE__/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Media Clean — remove AI metadata from photos and videos">
@@ -21,7 +23,7 @@
 {"@context":"https://schema.org","@graph":[
 {"@type":"SoftwareApplication","name":"Media Clean","applicationCategory":"MultimediaApplication","operatingSystem":"Telegram","url":"https://t.me/AIMediaclean_bot","description":"Telegram bot that removes AI generation metadata from photos and videos before posting to social apps."},
 {"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"What does Media Clean do?","acceptedAnswer":{"@type":"Answer","text":"It removes the technical records stored inside photo and video files. Photos are rebuilt from pixels and videos are re-encoded without the original generation records."}},
+{"@type":"Question","name":"What does Media Clean do?","acceptedAnswer":{"@type":"Answer","text":"It removes the technical records stored inside photo and video files. Photos are rebuilt from pixels and videos keep their original quality without the original generation records."}},
 {"@type":"Question","name":"What is the file size limit?","acceptedAnswer":{"@type":"Answer","text":"Up to 20 MB per file."}},
 {"@type":"Question","name":"Does it hide AI-generated content from Instagram or TikTok?","acceptedAnswer":{"@type":"Answer","text":"No. It cleans file metadata only. Platforms can still detect or label AI content by other means, and their rules about disclosing AI-generated content still apply."}}
 ]}]}
@@ -49,10 +51,10 @@ footer a{color:var(--muted)}
 </head>
 <body>
 <div class="wrap">
-<nav><span>✨ Media Clean</span><a href="/ru/" hreflang="ru">Русский</a></nav>
+<nav><span>✨ Media Clean</span><span><a href="/ru/" hreflang="ru">Русский</a> · <a href="/zh/" hreflang="zh-Hans">中文</a> · <a href="/ar/" hreflang="ar">العربية</a></span></nav>
 
 <h1>Remove AI metadata from photos and videos</h1>
-<p class="lead">Clean your files before posting to Instagram, TikTok and other social apps. Photos are rebuilt from pixels. Videos are re-encoded without the original generation records.</p>
+<p class="lead">Clean your files before posting to Instagram, TikTok and other social apps. Photos are rebuilt from pixels. Videos keep their original quality — the original generation records are removed.</p>
 <a class="btn" href="https://t.me/AIMediaclean_bot?start=site_en">Open in Telegram →</a>
 
 <h2>How it works</h2>
@@ -65,12 +67,12 @@ footer a{color:var(--muted)}
 <h2>What you get</h2>
 <div class="grid">
 <div class="card"><b>Photos</b>Rebuilt from pixels, so records stored inside the original file do not carry over.</div>
-<div class="card"><b>Videos</b>Re-encoded without the original generation records.</div>
+<div class="card"><b>Videos</b>Original quality: H.264 videos are not recompressed, the original records are removed.</div>
 <div class="card"><b>No app to install</b>Works inside Telegram on phone and desktop.</div>
 </div>
 
 <h2>FAQ</h2>
-<details><summary>What does Media Clean remove?</summary><p>The technical records stored inside photo and video files, including records about how a file was generated. Photos are rebuilt from pixels and videos are re-encoded.</p></details>
+<details><summary>What does Media Clean remove?</summary><p>The technical records stored inside photo and video files, including records about how a file was generated. Photos are rebuilt from pixels; H.264 videos keep the exact original frames. Neutral device info (Apple iPhone) is written instead of the original records.</p></details>
 <details><summary>What is the file size limit?</summary><p>Up to 20 MB per file.</p></details>
 <details><summary>Does it hide AI content from Instagram or TikTok?</summary><p>No. It cleans file metadata only. Platforms can still detect or label AI-generated content by other means, and their rules about disclosing AI content still apply. Label your content where it is required.</p></details>
 <details><summary>Where do I start?</summary><p>Open <a href="https://t.me/AIMediaclean_bot" style="color:var(--accent)">@AIMediaclean_bot</a> in Telegram and press Start.</p></details>
