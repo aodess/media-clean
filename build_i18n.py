@@ -103,6 +103,15 @@ for code in ('zh', 'ar'):
         open(f'public/blog/{a["slug"]}.html', 'w').write(article(d, a))
         urls.append('/blog/' + a['slug'])
 
+# Article-only packs (RU/EN): no landing, just blog pages.
+for code in ('ru', 'en'):
+    d = json.load(open(f'i18n/{code}_articles.json'))
+    d['path'] = d['path'] or ''
+    for a in d['articles']:
+        page = article(d, a).replace('href="//"', 'href="/"')
+        open(f'public/blog/{a["slug"]}.html', 'w').write(page)
+        urls.append('/blog/' + a['slug'])
+
 # hreflang on the EN/RU landings
 for f in ('public/index.html', 'public/ru/index.html'):
     s = open(f).read()

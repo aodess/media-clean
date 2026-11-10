@@ -12,7 +12,7 @@ You can see what your file contains on contentcredentials.org/verify or with any
 
 Media Clean is a free bot that strips this metadata: [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=article_en)
 
-- Send a photo or video up to 20 MB.
+- Send a photo or video up to 50 MB.
 - Choose JPEG or PNG for photos, MP4 for video.
 - Download the result.
 
