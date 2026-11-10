@@ -27,7 +27,9 @@ def nodes(md):
     return res
 
 for code in sys.argv[1:]:
-    d = json.load(open(f'i18n/{code}.json'))
+    import os
+    p = f'i18n/{code}.json' if os.path.exists(f'i18n/{code}.json') else f'i18n/{code}_articles.json'
+    d = json.load(open(p))
     for a in d['articles']:
         r = call('createPage', access_token=TOKEN, title=a['title'][:256], author_name='Media Clean',
                  author_url='https://t.me/AIMediaclean_bot', content=json.dumps(nodes(a['body']), ensure_ascii=False))
