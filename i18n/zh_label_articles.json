@@ -1,0 +1,14 @@
+{
+ "lang": "zh-Hans",
+ "dir": "ltr",
+ "path": "zh",
+ "btn": "在 Telegram 中打开 →",
+ "articles": [
+  {
+   "slug": "zh-remove-ai-label-instagram",
+   "title": "如何去除 Instagram 照片和视频上的“AI 信息”标签",
+   "desc": "为什么 Instagram 和 TikTok 会给帖子加上 AI 标签，标签来自文件里的哪些数据，以及如何用 Telegram 机器人在发布前一分钟内去除。",
+   "body": "发布照片或 Reels 后，名字下方出现了“AI 信息”（以前叫“Made with AI”）。AI 生成的视频会这样，只用编辑器修过图的真实照片也会这样。\n## 标签从哪里来\n- AI 生成工具和带 AI 功能的编辑器会在文件里写入隐藏记录：C2PA 内容凭证、XMP、IPTC、软件名称。\n- Instagram、Facebook 和 TikTok 在上传时读取这些记录，并自动加上标签。\n- 这些数据你看不见，文件外表看起来很正常。\n## 如何去除标签\n- 在 Telegram 中打开 [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_zh_label)，点击“开始”。\n- 发送照片或视频，最好以“文件”方式发送，避免被 Telegram 压缩。\n- 几秒钟后收到不含 AI 元数据的干净文件，直接发布即可。\n## 你需要知道\n- 画质不损失：照片尺寸不变，H.264 视频不重新压缩，画面与原片逐帧一致。\n- 文件最大 50 MB，支持 iPhone 照片（HEIC）。\n- 实测：清理后，我们的照片和视频没有一个被 Instagram 标注。\n- 机器人不会去除画面中看得见的水印。\n## 附赠功能\n把 TikTok 或 Instagram 视频链接发给机器人，它会以原画质下载视频。\n[立即去除 AI 标签 →](https://t.me/AIMediaclean_bot?start=blog_zh_label)"
+  }
+ ]
+}

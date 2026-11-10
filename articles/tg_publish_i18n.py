@@ -28,7 +28,7 @@ def nodes(md):
 
 for code in sys.argv[1:]:
     import os
-    p = f'i18n/{code}.json' if os.path.exists(f'i18n/{code}.json') else f'i18n/{code}_articles.json'
+    p = f'i18n/{code}.json' if os.path.exists(f'i18n/{code}.json') else f'i18n/{code}_articles.json' if os.path.exists(f'i18n/{code}_articles.json') else f'i18n/{code}.json'
     d = json.load(open(p))
     for a in d['articles']:
         r = call('createPage', access_token=TOKEN, title=a['title'][:256], author_name='Media Clean',
