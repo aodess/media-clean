@@ -1,0 +1,20 @@
+{
+ "lang": "zh-Hans",
+ "dir": "ltr",
+ "path": "zh",
+ "btn": "在 Telegram 中打开 →",
+ "articles": [
+  {
+   "slug": "zh-tiktok-ai-label",
+   "title": "TikTok“AI 生成”标签从哪里来？如何从视频中去除",
+   "desc": "为什么 TikTok 会自动给视频加上 AI 生成标签，文件里的哪些数据会触发它，以及如何在发布前无损清理视频。",
+   "body": "TikTok 在文件中发现生成记录时，会自动给视频加上“AI 生成”标签。只用 AI 做过画质增强、去背景或加特效的视频，也经常被标注。\n## 为什么会被标注\n- 许多 AI 工具和编辑器会在视频里写入 C2PA 内容凭证——记录文件如何生成的签名数据。\n- TikTok 上传时读取这些记录并自动加上标签。\n- 文件中还可能带有软件和设备标签。\n## 如何清理视频\n- 打开 [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_zh_tiktok)，以文件方式发送视频。\n- 机器人删除 AI 元数据，返回干净的 MP4。\n- H.264 视频不重新压缩，画面与原片一致。\n## 你需要知道\n- 文件最大 50 MB。\n- 也可以直接发送 TikTok 视频链接，机器人按原画质下载。\n- 如果视频完全由 AI 生成，TikTok 规则可能要求你手动标注。\n[立即清理视频 →](https://t.me/AIMediaclean_bot?start=blog_zh_tiktok)"
+  },
+  {
+   "slug": "zh-what-is-c2pa",
+   "title": "什么是 C2PA（内容凭证）？如何从照片和视频中删除",
+   "desc": "简单说明 C2PA 存储什么、哪些软件会写入、社交平台为什么据此加 AI 标签，以及如何从文件中删除这些数据。",
+   "body": "C2PA 是文件“来源护照”的标准：照片或视频中嵌入一段签名记录，说明文件由什么软件生成、如何编辑、是否使用了 AI，也称为内容凭证（Content Credentials）。\n## 谁会写入 C2PA\n- 图像和视频生成工具，例如 Adobe Firefly 和 OpenAI 的服务。\n- 带 AI 功能的编辑器：生成式填充、移除物体。\n- 部分相机和手机。\n## 为什么重要\n- Instagram、Facebook 和 TikTok 会读取 C2PA 并据此加上 AI 标签。\n- 即使重命名或转发，记录仍留在文件中。\n## 如何删除 C2PA\n- 把照片或视频发给 [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_zh_c2pa)。\n- 机器人删除 C2PA（JUMBF）数据块以及 EXIF、XMP、IPTC，并检查文件结构。\n- 照片尺寸不变，H.264 视频保持原画质。\n## 不会做什么\n- 不会去除画面上看得见的水印。\n[从文件中删除 C2PA →](https://t.me/AIMediaclean_bot?start=blog_zh_c2pa)"
+  }
+ ]
+}

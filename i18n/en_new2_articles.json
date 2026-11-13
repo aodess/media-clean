@@ -1,0 +1,20 @@
+{
+ "lang": "en",
+ "dir": "ltr",
+ "path": "",
+ "btn": "Open the bot in Telegram →",
+ "articles": [
+  {
+   "slug": "tiktok-ai-generated-label-remove",
+   "title": "TikTok “AI-generated” label: where it comes from and how to remove it from your video",
+   "desc": "Why TikTok automatically labels a video as AI-generated, which data in the file triggers it, and how to clean the video before posting without losing quality.",
+   "body": "TikTok automatically adds an “AI-generated” label when it finds generation records in the file. It often shows up on videos you only touched up with AI: upscaling, background removal, an effect.\n## Why TikTok adds the label\n- Many AI tools and editors write Content Credentials (C2PA) into the video — a signed record of how the file was made.\n- TikTok reads these records on upload and turns the label on automatically.\n- Files can also carry software and device tags.\n## How to clean the video\n- Open [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_en_tiktok) and send the clip as a file.\n- The bot deletes the AI metadata and returns a clean MP4.\n- H.264 video is not recompressed: frames match the original, same quality.\n## Good to know\n- Files up to 50 MB.\n- You can also send a TikTok video link — the bot downloads it in original quality.\n- If a clip is fully generated, TikTok’s rules may require you to disclose it manually.\n[Clean your video now →](https://t.me/AIMediaclean_bot?start=blog_en_tiktok)"
+  },
+  {
+   "slug": "what-is-c2pa-how-to-remove",
+   "title": "What is C2PA (Content Credentials) and how to remove it from photos and videos",
+   "desc": "In plain words: what C2PA stores, which apps write it, why social networks use it to add an AI label, and how to remove this data from a file.",
+   "body": "C2PA is a standard for a file’s “provenance passport”. A signed record is embedded in the photo or video: which app made it, how it was edited, whether AI was used. It is also called Content Credentials.\n## Who writes C2PA\n- Image and video generators, for example Adobe Firefly and OpenAI services.\n- Editors with AI features: generative fill, object removal.\n- Some cameras and phones.\n## Why it matters\n- Instagram, Facebook and TikTok read C2PA and use it to add an AI label.\n- The record stays in the file even after renaming or forwarding it.\n## How to remove C2PA\n- Send the photo or video to [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_en_c2pa).\n- The bot deletes the C2PA (JUMBF) blocks plus EXIF, XMP and IPTC, and verifies the file structure.\n- Photos keep their size, H.264 videos keep the original quality.\n## What C2PA removal does not do\n- It does not remove visible watermarks or marks drawn into the image itself.\n[Remove C2PA from a file →](https://t.me/AIMediaclean_bot?start=blog_en_c2pa)"
+  }
+ ]
+}
