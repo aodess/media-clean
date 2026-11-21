@@ -1,0 +1,15 @@
+{
+ "lang": "es",
+ "dir": "ltr",
+ "path": "",
+ "btn": "Abrir el bot en Telegram →",
+ "articles": [
+  {
+   "slug": "como-quitar-etiqueta-ia-instagram",
+   "start": "blog_es_label",
+   "title": "Cómo quitar la etiqueta “Información de IA” de Instagram en fotos y videos",
+   "desc": "Por qué Instagram y TikTok ponen una etiqueta de IA en tu publicación, de dónde sale dentro del archivo y cómo quitarla antes de publicar en un minuto con un bot de Telegram.",
+   "body": "Publicas una foto o un Reel y aparece “Información de IA” (antes “Hecho con IA”) debajo de tu nombre. Pasa con videos generados con IA y también con fotos reales que solo retocaste en un editor.\n## De dónde sale la etiqueta\n- Los generadores de IA y los editores con funciones de IA escriben registros ocultos en el archivo: C2PA (Content Credentials), XMP, IPTC, el nombre del programa.\n- Instagram, Facebook y TikTok leen esos registros al subir el archivo y ponen la etiqueta automáticamente.\n- No ves estos datos: por fuera el archivo parece normal.\n## Cómo quitar la etiqueta\n- Abre [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_es_label) en Telegram y pulsa Iniciar.\n- Envía la foto o el video, mejor como archivo para que Telegram no lo comprima.\n- En unos segundos recibes un archivo limpio, sin metadatos de IA. Ya puedes publicarlo.\n## Conviene saber\n- Sin pérdida de calidad: las fotos mantienen su tamaño y los videos del móvil no se recomprimen; los fotogramas son idénticos al original, HDR incluido.\n- Archivos de hasta 50 MB, también fotos de iPhone (HEIC).\n- Probado: después de la limpieza, Instagram no etiquetó ninguna de nuestras fotos ni videos.\n- El bot no quita marcas de agua visibles en la imagen.\n- Es gratis.\n## Extra\nEnvía al bot el enlace de un video de TikTok o Instagram y lo descarga en calidad original.\n[Quitar la etiqueta de IA ahora →](https://t.me/AIMediaclean_bot?start=blog_es_label)"
+  }
+ ]
+}

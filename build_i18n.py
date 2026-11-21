@@ -104,7 +104,7 @@ for code in ('zh', 'ar'):
         urls.append('/blog/' + a['slug'])
 
 # Article-only packs (RU/EN): no landing, just blog pages.
-for code in ('ru', 'en', 'pt', 'uz'):
+for code in ('ru', 'en', 'pt', 'uz', 'he', 'uk', 'es', 'de', 'fr', 'tr', 'th', 'hi'):
     d = json.load(open(f'i18n/{code}_articles.json'))
     d['path'] = d['path'] or ''
     for a in d['articles']:

@@ -1,0 +1,15 @@
+{
+ "lang": "fr",
+ "dir": "ltr",
+ "path": "",
+ "btn": "Ouvrir le bot dans Telegram →",
+ "articles": [
+  {
+   "slug": "supprimer-etiquette-ia-instagram",
+   "start": "blog_fr_label",
+   "title": "Comment supprimer l’étiquette « Infos IA » d’Instagram sur vos photos et vidéos",
+   "desc": "Pourquoi Instagram et TikTok ajoutent une étiquette IA à votre publication, d’où elle vient dans le fichier et comment la supprimer avant de publier, en une minute, avec un bot Telegram.",
+   "body": "Vous publiez une photo ou un Reel et « Infos IA » (anciennement « Made with AI ») apparaît sous votre nom. Cela arrive aux vidéos générées par IA, mais aussi à de vraies photos simplement retouchées dans un éditeur.\n## D’où vient l’étiquette\n- Les générateurs d’IA et les éditeurs dotés de fonctions IA écrivent des données cachées dans le fichier : C2PA (Content Credentials), XMP, IPTC, le nom du logiciel.\n- Instagram, Facebook et TikTok lisent ces données à l’envoi et ajoutent l’étiquette automatiquement.\n- Vous ne voyez pas ces données : de l’extérieur, le fichier paraît normal.\n## Comment supprimer l’étiquette\n- Ouvrez [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_fr_label) dans Telegram et appuyez sur Démarrer.\n- Envoyez la photo ou la vidéo, de préférence en tant que fichier pour que Telegram ne la compresse pas.\n- Quelques secondes plus tard, vous recevez un fichier propre, sans métadonnées IA. Publiez-le.\n## Bon à savoir\n- Aucune perte de qualité : les photos gardent leur taille, les vidéos du téléphone ne sont pas recompressées ; les images sont identiques à l’original, HDR compris.\n- Fichiers jusqu’à 50 Mo, photos d’iPhone (HEIC) comprises.\n- Testé : après le nettoyage, Instagram n’a étiqueté aucune de nos photos ni vidéos.\n- Le bot ne supprime pas les filigranes visibles sur l’image.\n- C’est gratuit.\n## Bonus\nEnvoyez au bot le lien d’une vidéo TikTok ou Instagram : il la télécharge en qualité d’origine.\n[Supprimer l’étiquette IA maintenant →](https://t.me/AIMediaclean_bot?start=blog_fr_label)"
+  }
+ ]
+}

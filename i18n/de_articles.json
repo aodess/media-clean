@@ -1,0 +1,15 @@
+{
+ "lang": "de",
+ "dir": "ltr",
+ "path": "",
+ "btn": "Bot in Telegram öffnen →",
+ "articles": [
+  {
+   "slug": "ki-label-instagram-entfernen",
+   "start": "blog_de_label",
+   "title": "Das „KI-Info“-Label bei Instagram von Fotos und Videos entfernen",
+   "desc": "Warum Instagram und TikTok deinen Beitrag mit einem KI-Label versehen, woher es in der Datei kommt und wie du es vor dem Posten in einer Minute mit einem Telegram-Bot entfernst.",
+   "body": "Du postest ein Foto oder ein Reel, und unter deinem Namen steht „KI-Info“ (früher „Made with AI“). Das passiert bei KI-generierten Clips, aber auch bei echten Fotos, die nur in einem Editor nachbearbeitet wurden.\n## Woher das Label kommt\n- KI-Generatoren und Editoren mit KI-Funktionen schreiben versteckte Einträge in die Datei: C2PA (Content Credentials), XMP, IPTC, den Programmnamen.\n- Instagram, Facebook und TikTok lesen diese Einträge beim Hochladen und setzen das Label automatisch.\n- Diese Daten siehst du nicht – von außen wirkt die Datei ganz normal.\n## So entfernst du das Label\n- Öffne [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_de_label) in Telegram und tippe auf Start.\n- Sende das Foto oder Video – am besten als Datei, damit Telegram es nicht komprimiert.\n- Nach wenigen Sekunden bekommst du eine saubere Datei ohne KI-Metadaten. Einfach posten.\n## Gut zu wissen\n- Kein Qualitätsverlust: Fotos behalten ihre Größe, Handyvideos werden nicht neu komprimiert – die Bilder sind identisch mit dem Original, HDR inklusive.\n- Dateien bis 50 MB, auch iPhone-Fotos (HEIC).\n- Getestet: Nach der Bereinigung hat Instagram keines unserer Fotos oder Videos markiert.\n- Sichtbare Wasserzeichen im Bild entfernt der Bot nicht.\n- Kostenlos.\n## Bonus\nSchick dem Bot einen TikTok- oder Instagram-Link, und er lädt das Video in Originalqualität herunter.\n[KI-Label jetzt entfernen →](https://t.me/AIMediaclean_bot?start=blog_de_label)"
+  }
+ ]
+}
