@@ -1,0 +1,22 @@
+{
+ "lang": "uz",
+ "dir": "ltr",
+ "path": "",
+ "btn": "Botni Telegram’da ochish →",
+ "articles": [
+  {
+   "slug": "instagram-ai-belgisini-olib-tashlash",
+   "start": "blog_uz_label",
+   "title": "Instagram’dagi “AI maʼlumoti” belgisini foto va videodan qanday olib tashlash mumkin",
+   "desc": "Instagram va TikTok nega postga AI belgisini qoʻyadi, bu belgi fayl ichidagi qaysi maʼlumotdan keladi va uni Telegram bot yordamida bir daqiqada qanday olib tashlash mumkin.",
+   "body": "Foto yoki Reels joylaysiz va ismingiz ostida “AI maʼlumoti” (avval “Made with AI”) yozuvi chiqadi. Bu AI yaratgan videolarda ham, faqat muharrirda biroz tahrirlangan haqiqiy fotolarda ham boʻladi.\n## Belgi qayerdan keladi\n- AI generatorlari va AI funksiyali muharrirlar faylga yashirin yozuvlar qoʻshadi: C2PA (Content Credentials), XMP, IPTC, dastur nomi.\n- Instagram, Facebook va TikTok yuklashda bu yozuvlarni oʻqiydi va belgini avtomatik qoʻyadi.\n- Bu maʼlumotlar koʻrinmaydi — tashqaridan fayl oddiydek koʻrinadi.\n## Belgini qanday olib tashlash\n- Telegram’da [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_uz_label) ni oching va “Start” tugmasini bosing.\n- Foto yoki videoni yuboring — Telegram siqib yubormasligi uchun fayl sifatida yuborgan maʼqul.\n- Bir necha soniyadan soʻng AI metamaʼlumotlarisiz toza fayl olasiz. Uni joylashingiz mumkin.\n## Bilish foydali\n- Sifat yoʻqolmaydi: fotolar oʻlchami oʻzgarmaydi, telefondagi videolar qayta siqilmaydi — kadrlar asl nusxa bilan bir xil, HDR ham saqlanadi.\n- 50 MB gacha fayllar, iPhone fotolari (HEIC) ham.\n- Sinab koʻrildi: tozalangandan keyin Instagram bizning birorta foto yoki videomizga belgi qoʻymadi.\n- Bot rasmdagi koʻrinadigan suv belgilarini olib tashlamaydi.\n- Bepul.\n## Qoʻshimcha\nBotga TikTok yoki Instagram videosi havolasini yuboring — u videoni asl sifatda yuklab beradi.\n[AI belgisini hozir olib tashlash →](https://t.me/AIMediaclean_bot?start=blog_uz_label)"
+  },
+  {
+   "slug": "tiktok-ai-belgisini-olib-tashlash",
+   "start": "blog_uz_tiktok",
+   "title": "TikTok’dagi “AI tomonidan yaratilgan” belgisi: qayerdan keladi va uni videodan qanday olib tashlash mumkin",
+   "desc": "TikTok nega videoni avtomatik ravishda AI yaratgan deb belgilaydi, fayldagi qaysi maʼlumot bunga sabab boʻladi va videoni sifatini yoʻqotmasdan qanday tozalash mumkin.",
+   "body": "TikTok faylda yaratish yozuvlarini topsa, “AI tomonidan yaratilgan” belgisini avtomatik qoʻyadi. U koʻpincha AI bilan biroz tahrirlangan videolarda ham chiqadi: sifatni oshirish, fonni olib tashlash, effekt.\n## TikTok nega belgi qoʻyadi\n- Koʻplab AI vositalari va muharrirlar videoga Content Credentials (C2PA) yozadi — fayl qanday yaratilgani haqida imzolangan yozuv.\n- TikTok yuklashda bu yozuvlarni oʻqiydi va belgini avtomatik yoqadi.\n- Faylda dastur va qurilma teglari ham boʻlishi mumkin.\n## Videoni qanday tozalash\n- [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_uz_tiktok) ni oching va videoni fayl sifatida yuboring.\n- Bot AI metamaʼlumotlarini oʻchiradi va toza MP4 qaytaradi.\n- Telefondagi videolar qayta siqilmaydi: kadrlar asl nusxa bilan bir xil, sifat oʻsha-oʻsha.\n## Bilish foydali\n- 50 MB gacha fayllar.\n- TikTok videosi havolasini ham yuborishingiz mumkin — bot uni asl sifatda yuklab beradi.\n- Agar video toʻliq AI yordamida yaratilgan boʻlsa, TikTok qoidalari buni qoʻlda belgilashni talab qilishi mumkin.\n[Videoni hozir tozalash →](https://t.me/AIMediaclean_bot?start=blog_uz_tiktok)"
+  }
+ ]
+}

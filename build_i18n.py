@@ -84,7 +84,7 @@ def article(d, a):
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": a['title'], "inLanguage": d['lang'],
           "author": {"@type": "Organization", "name": "Media Clean"}, "datePublished": "2026-11-09",
           "mainEntityOfPage": "__SITE__/blog/" + a['slug']}
-    bot = 'https://t.me/AIMediaclean_bot?start=blog_' + d['path']
+    bot = 'https://t.me/AIMediaclean_bot?start=' + (a.get('start') or 'blog_' + d['path'])
     return head(d, a['title'] + ' — Media Clean', a['desc'], '/blog/' + a['slug'], ld, alternates=False) + f'''
 <body><div class="wrap"><nav><a href="/{d['path']}/">✨ Media Clean</a></nav>
 <article><h1 style="font-size:clamp(26px,5vw,40px)">{e(a['title'])}</h1>
@@ -104,7 +104,7 @@ for code in ('zh', 'ar'):
         urls.append('/blog/' + a['slug'])
 
 # Article-only packs (RU/EN): no landing, just blog pages.
-for code in ('ru', 'en'):
+for code in ('ru', 'en', 'pt', 'uz'):
     d = json.load(open(f'i18n/{code}_articles.json'))
     d['path'] = d['path'] or ''
     for a in d['articles']:
