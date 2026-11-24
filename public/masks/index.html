@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masks — Media Clean</title>
+<meta name="description" content="Eye masks for photos and videos in the Media Clean Telegram bot: blur, black bar, dark glasses and premium masks.">
+<meta name="theme-color" content="#06122b">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{--bg:#06122b;--card:#0d1f45;--text:#eaf1ff;--muted:#9bb0d6;--accent:#2fd6c0;--accent2:#3b82f6;--gold:#f5c451}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1000px 520px at 70% -10%,#12306e 0%,var(--bg) 60%) var(--bg);color:var(--text);min-height:100vh}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 56px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:4px 0 24px;font-weight:600}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.12;margin:0 0 12px}
+.lead{font-size:18px;color:var(--muted);margin:0 0 8px}
+h2{font-size:22px;margin:36px 0 14px;display:flex;align-items:center;gap:10px}
+.pill{font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;background:rgba(47,214,192,.14);color:var(--accent)}
+.pill.gold{background:rgba(245,196,81,.16);color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:10px 10px 12px;text-align:center}
+.card img{width:100%;aspect-ratio:1;display:block;border-radius:12px;background:linear-gradient(160deg,#1b3a78,#0b1a3a)}
+.card span{display:block;margin-top:8px;font-size:15px;font-weight:600}
+.premium .card{border-color:rgba(245,196,81,.35);background:linear-gradient(180deg,#1a2550,#0d1f45)}
+.premium .card img{background:linear-gradient(160deg,#4a3a12,#1a1d3a)}
+.cta{margin-top:36px;background:var(--card);border:1px solid rgba(245,196,81,.35);border-radius:18px;padding:20px 18px;text-align:center}
+.cta p{margin:0 0 14px;color:var(--muted);font-size:16px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#04122a;font-weight:700;padding:14px 24px;border-radius:14px;text-decoration:none;font-size:17px}
+[dir=rtl] .grid{direction:rtl}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="/">Media Clean</a><a href="https://t.me/AIMediaclean_bot">@AIMediaclean_bot</a></nav>
+<h1 id="title"></h1>
+<p class="lead" id="lead"></p>
+<h2><span id="free"></span> <span class="pill">0 $</span></h2>
+<div class="grid" id="free-grid"></div>
+<div class="premium">
+<h2><span id="premium"></span> <span class="pill gold">💎</span></h2>
+<div class="grid" id="premium-grid"></div>
+</div>
+<div class="cta"><p id="note"></p><a class="btn" id="cta" href="https://t.me/AIMediaclean_bot?start=tester"></a></div>
+</div>
+<script>
+const DATA = {"ru": {"page_title": "Маски для фото и видео", "page_lead": "Бот находит лицо и надевает маску на глаза — она поворачивается вместе с головой. Работает на фото и видео.", "page_free": "Бесплатно", "page_premium": "Премиум", "page_cta": "🧪 Стать тестировщиком", "page_note": "Тестировщикам — премиум-маски бесплатно и без лимита на месяц.", "names": {"blur": "🌫 Размытие", "bar": "⬛ Чёрная полоса", "glasses": "🕶 Тёмные очки", "crown": "👑 Корона с очками", "venetian": "🎭 Венецианская", "lace": "🕸 Кружевная", "cat": "🐱 Кошечка", "fox": "🦊 Лисичка", "leather": "⛓ Кожаная", "leather_full": "🖤 Кожаная на всё лицо", "domino": "❤️ Домино", "aviators": "😎 Авиаторы", "ninja": "🥷 Ниндзя"}}, "en": {"page_title": "Masks for photos and videos", "page_lead": "The bot finds the face and puts a mask over the eyes — it turns with the head. Works on photos and videos.", "page_free": "Free", "page_premium": "Premium", "page_cta": "🧪 Become a tester", "page_note": "Testers get premium masks free and unlimited for a month.", "names": {"blur": "🌫 Blur", "bar": "⬛ Black bar", "glasses": "🕶 Dark glasses", "crown": "👑 Crown & glasses", "venetian": "🎭 Venetian", "lace": "🕸 Lace", "cat": "🐱 Kitty", "fox": "🦊 Fox", "leather": "⛓ Leather", "leather_full": "🖤 Full-face leather", "domino": "❤️ Domino", "aviators": "😎 Aviators", "ninja": "🥷 Ninja"}}, "he": {"page_title": "מסכות לתמונות וסרטונים", "page_lead": "הבוט מוצא את הפנים ומלביש מסכה על העיניים — היא מסתובבת עם הראש. עובד על תמונות וסרטונים.", "page_free": "בחינם", "page_premium": "פרימיום", "page_cta": "🧪 להצטרף כבודק/ת", "page_note": "לבודקים — מסכות פרימיום בחינם וללא הגבלה למשך חודש.", "names": {"blur": "🌫 טשטוש", "bar": "⬛ פס שחור", "glasses": "🕶 משקפי שמש", "crown": "👑 כתר ומשקפיים", "venetian": "🎭 ונציאנית", "lace": "🕸 תחרה", "cat": "🐱 חתולה", "fox": "🦊 שועל", "leather": "⛓ עור", "leather_full": "🖤 עור על כל הפנים", "domino": "❤️ דומינו", "aviators": "😎 משקפי טייסים", "ninja": "🥷 נינג׳ה"}}, "uk": {"page_title": "Маски для фото й відео", "page_lead": "Бот знаходить обличчя й одягає маску на очі — вона повертається разом із головою. Працює на фото й відео.", "page_free": "Безкоштовно", "page_premium": "Преміум", "page_cta": "🧪 Стати тестувальником", "page_note": "Тестувальникам — преміум-маски безкоштовно й без ліміту на місяць.", "names": {"blur": "🌫 Розмиття", "bar": "⬛ Чорна смуга", "glasses": "🕶 Темні окуляри", "crown": "👑 Корона з окулярами", "venetian": "🎭 Венеціанська", "lace": "🕸 Мереживна", "cat": "🐱 Кицька", "fox": "🦊 Лисичка", "leather": "⛓ Шкіряна", "leather_full": "🖤 Шкіряна на все обличчя", "domino": "❤️ Доміно", "aviators": "😎 Авіатори", "ninja": "🥷 Ніндзя"}}, "es": {"page_title": "Máscaras para fotos y vídeos", "page_lead": "El bot encuentra la cara y pone una máscara sobre los ojos; gira con la cabeza. Funciona en fotos y vídeos.", "page_free": "Gratis", "page_premium": "Premium", "page_cta": "🧪 Ser tester", "page_note": "Los testers tienen las máscaras premium gratis y sin límite durante un mes.", "names": {"blur": "🌫 Difuminado", "bar": "⬛ Barra negra", "glasses": "🕶 Gafas oscuras", "crown": "👑 Corona con gafas", "venetian": "🎭 Veneciana", "lace": "🕸 Encaje", "cat": "🐱 Gatita", "fox": "🦊 Zorro", "leather": "⛓ Cuero", "leather_full": "🖤 Cuero integral", "domino": "❤️ Dominó", "aviators": "😎 Aviador", "ninja": "🥷 Ninja"}}, "de": {"page_title": "Masken für Fotos und Videos", "page_lead": "Der Bot findet das Gesicht und setzt eine Maske auf die Augen — sie dreht sich mit dem Kopf. Funktioniert bei Fotos und Videos.", "page_free": "Gratis", "page_premium": "Premium", "page_cta": "🧪 Tester werden", "page_note": "Tester bekommen Premium-Masken einen Monat lang gratis und ohne Limit.", "names": {"blur": "🌫 Weichzeichner", "bar": "⬛ Schwarzer Balken", "glasses": "🕶 Dunkle Brille", "crown": "👑 Krone mit Brille", "venetian": "🎭 Venezianisch", "lace": "🕸 Spitze", "cat": "🐱 Kätzchen", "fox": "🦊 Fuchs", "leather": "⛓ Leder", "leather_full": "🖤 Leder, ganzes Gesicht", "domino": "❤️ Domino", "aviators": "😎 Pilotenbrille", "ninja": "🥷 Ninja"}}, "fr": {"page_title": "Masques pour photos et vidéos", "page_lead": "Le bot trouve le visage et pose un masque sur les yeux — il tourne avec la tête. Fonctionne sur photos et vidéos.", "page_free": "Gratuit", "page_premium": "Premium", "page_cta": "🧪 Devenir testeur", "page_note": "Les testeurs ont les masques premium gratuits et sans limite pendant un mois.", "names": {"blur": "🌫 Flou", "bar": "⬛ Bande noire", "glasses": "🕶 Lunettes noires", "crown": "👑 Couronne et lunettes", "venetian": "🎭 Vénitien", "lace": "🕸 Dentelle", "cat": "🐱 Chaton", "fox": "🦊 Renard", "leather": "⛓ Cuir", "leather_full": "🖤 Cuir intégral", "domino": "❤️ Domino", "aviators": "😎 Aviateur", "ninja": "🥷 Ninja"}}, "pt": {"page_title": "Máscaras para fotos e vídeos", "page_lead": "O bot encontra o rosto e coloca uma máscara nos olhos — ela gira junto com a cabeça. Funciona em fotos e vídeos.", "page_free": "Grátis", "page_premium": "Premium", "page_cta": "🧪 Ser testador", "page_note": "Testadores ganham as máscaras premium de graça e sem limite por um mês.", "names": {"blur": "🌫 Desfoque", "bar": "⬛ Faixa preta", "glasses": "🕶 Óculos escuros", "crown": "👑 Coroa com óculos", "venetian": "🎭 Veneziana", "lace": "🕸 Renda", "cat": "🐱 Gatinha", "fox": "🦊 Raposa", "leather": "⛓ Couro", "leather_full": "🖤 Couro no rosto todo", "domino": "❤️ Dominó", "aviators": "😎 Aviador", "ninja": "🥷 Ninja"}}, "ar": {"page_title": "أقنعة للصور والفيديو", "page_lead": "يجد البوت الوجه ويضع قناعًا على العينين — يدور مع الرأس. يعمل على الصور والفيديو.", "page_free": "مجانًا", "page_premium": "بريميوم", "page_cta": "🧪 كن مختبرًا", "page_note": "للمختبرين — أقنعة البريميوم مجانًا وبلا حدود لمدة شهر.", "names": {"blur": "🌫 تمويه", "bar": "⬛ شريط أسود", "glasses": "🕶 نظارات داكنة", "crown": "👑 تاج ونظارات", "venetian": "🎭 فينيسي", "lace": "🕸 دانتيل", "cat": "🐱 قطة", "fox": "🦊 ثعلب", "leather": "⛓ جلد", "leather_full": "🖤 جلد لكامل الوجه", "domino": "❤️ دومينو", "aviators": "😎 نظارات طيار", "ninja": "🥷 نينجا"}}, "tr": {"page_title": "Fotoğraf ve videolar için maskeler", "page_lead": "Bot yüzü bulur ve gözlere bir maske takar — maske başla birlikte döner. Fotoğraf ve videolarda çalışır.", "page_free": "Ücretsiz", "page_premium": "Premium", "page_cta": "🧪 Test eden ol", "page_note": "Test edenlere premium maskeler bir ay boyunca ücretsiz ve sınırsız.", "names": {"blur": "🌫 Bulanıklık", "bar": "⬛ Siyah bant", "glasses": "🕶 Koyu gözlük", "crown": "👑 Taç ve gözlük", "venetian": "🎭 Venedik", "lace": "🕸 Dantel", "cat": "🐱 Kedicik", "fox": "🦊 Tilki", "leather": "⛓ Deri", "leather_full": "🖤 Tam yüz deri", "domino": "❤️ Domino", "aviators": "😎 Pilot gözlüğü", "ninja": "🥷 Ninja"}}, "zh": {"page_title": "照片和视频面具", "page_lead": "机器人找到人脸，在眼睛上戴上面具——面具随头部转动。适用于照片和视频。", "page_free": "免费", "page_premium": "高级版", "page_cta": "🧪 成为测试者", "page_note": "测试者一个月内可免费无限使用高级面具。", "names": {"blur": "🌫 模糊", "bar": "⬛ 黑条", "glasses": "🕶 墨镜", "crown": "👑 皇冠墨镜", "venetian": "🎭 威尼斯", "lace": "🕸 蕾丝", "cat": "🐱 小猫", "fox": "🦊 狐狸", "leather": "⛓ 皮革", "leather_full": "🖤 全脸皮革", "domino": "❤️ 多米诺", "aviators": "😎 飞行员墨镜", "ninja": "🥷 忍者"}}, "th": {"page_title": "หน้ากากสำหรับรูปและวิดีโอ", "page_lead": "บอทหาใบหน้าแล้วสวมหน้ากากที่ดวงตา — หน้ากากหมุนตามศีรษะ ใช้ได้ทั้งรูปและวิดีโอ", "page_free": "ฟรี", "page_premium": "พรีเมียม", "page_cta": "🧪 เป็นผู้ทดสอบ", "page_note": "ผู้ทดสอบใช้หน้ากากพรีเมียมฟรีไม่จำกัด 1 เดือน", "names": {"blur": "🌫 เบลอ", "bar": "⬛ แถบดำ", "glasses": "🕶 แว่นดำ", "crown": "👑 มงกุฎกับแว่น", "venetian": "🎭 เวนิส", "lace": "🕸 ลูกไม้", "cat": "🐱 แมวเหมียว", "fox": "🦊 จิ้งจอก", "leather": "⛓ หนัง", "leather_full": "🖤 หนังเต็มหน้า", "domino": "❤️ โดมิโน", "aviators": "😎 แว่นนักบิน", "ninja": "🥷 นินจา"}}, "hi": {"page_title": "फ़ोटो और वीडियो के लिए मास्क", "page_lead": "बॉट चेहरा ढूँढकर आँखों पर मास्क लगाता है — मास्क सिर के साथ घूमता है। फ़ोटो और वीडियो दोनों पर काम करता है।", "page_free": "मुफ़्त", "page_premium": "प्रीमियम", "page_cta": "🧪 टेस्टर बनें", "page_note": "टेस्टर्स के लिए एक महीने तक प्रीमियम मास्क मुफ़्त और बिना लिमिट।", "names": {"blur": "🌫 ब्लर", "bar": "⬛ काली पट्टी", "glasses": "🕶 काला चश्मा", "crown": "👑 ताज और चश्मा", "venetian": "🎭 वेनिस", "lace": "🕸 लेस", "cat": "🐱 बिल्ली", "fox": "🦊 लोमड़ी", "leather": "⛓ लेदर", "leather_full": "🖤 पूरे चेहरे का लेदर", "domino": "❤️ डोमिनो", "aviators": "😎 एविएटर", "ninja": "🥷 निंजा"}}};
+const FREE = ["blur", "bar", "glasses"], PREMIUM = ["crown", "venetian", "lace", "cat", "fox", "leather", "leather_full", "domino", "aviators", "ninja"];
+const tg = window.Telegram && Telegram.WebApp;
+const asked = new URLSearchParams(location.search).get('lang');
+const user = tg && tg.initDataUnsafe && tg.initDataUnsafe.user && tg.initDataUnsafe.user.language_code;
+const pick = [asked, user, navigator.language].map(v => (v || '').slice(0, 2).toLowerCase()).find(v => DATA[v]) || 'en';
+const t = DATA[pick];
+document.documentElement.lang = pick;
+if (pick === 'he' || pick === 'ar') document.documentElement.dir = 'rtl';
+document.title = t.page_title + ' — Media Clean';
+for (const [id, key] of [['title','page_title'],['lead','page_lead'],['free','page_free'],['premium','page_premium'],['note','page_note'],['cta','page_cta']])
+  document.getElementById(id).textContent = t[key];
+function fill(id, keys) {
+  const grid = document.getElementById(id);
+  for (const key of keys) {
+    const card = document.createElement('div'); card.className = 'card';
+    const img = document.createElement('img'); img.src = 'img/' + key + '.png'; img.alt = t.names[key]; img.loading = 'lazy'; img.width = 300; img.height = 300;
+    const name = document.createElement('span'); name.textContent = t.names[key];
+    card.append(img, name); grid.append(card);
+  }
+}
+fill('free-grid', FREE); fill('premium-grid', PREMIUM);
+if (tg) {
+  tg.ready(); tg.expand();
+  document.getElementById('cta').addEventListener('click', e => { e.preventDefault(); tg.openTelegramLink(e.currentTarget.href); tg.close(); });
+}
+</script>
+</body>
+</html>
