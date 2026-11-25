@@ -1,15 +1,22 @@
 {
- "lang": "fr",
- "dir": "ltr",
- "path": "",
- "btn": "Ouvrir le bot dans Telegram →",
- "articles": [
-  {
-   "slug": "supprimer-etiquette-ia-instagram",
-   "start": "blog_fr_label",
-   "title": "Comment supprimer l’étiquette « Infos IA » d’Instagram sur vos photos et vidéos",
-   "desc": "Pourquoi Instagram et TikTok ajoutent une étiquette IA à votre publication, d’où elle vient dans le fichier et comment la supprimer avant de publier, en une minute, avec un bot Telegram.",
-   "body": "Vous publiez une photo ou un Reel et « Infos IA » (anciennement « Made with AI ») apparaît sous votre nom. Cela arrive aux vidéos générées par IA, mais aussi à de vraies photos simplement retouchées dans un éditeur.\n## D’où vient l’étiquette\n- Les générateurs d’IA et les éditeurs dotés de fonctions IA écrivent des données cachées dans le fichier : C2PA (Content Credentials), XMP, IPTC, le nom du logiciel.\n- Instagram, Facebook et TikTok lisent ces données à l’envoi et ajoutent l’étiquette automatiquement.\n- Vous ne voyez pas ces données : de l’extérieur, le fichier paraît normal.\n## Comment supprimer l’étiquette\n- Ouvrez [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_fr_label) dans Telegram et appuyez sur Démarrer.\n- Envoyez la photo ou la vidéo, de préférence en tant que fichier pour que Telegram ne la compresse pas.\n- Quelques secondes plus tard, vous recevez un fichier propre, sans métadonnées IA. Publiez-le.\n## Bon à savoir\n- Aucune perte de qualité : les photos gardent leur taille, les vidéos du téléphone ne sont pas recompressées ; les images sont identiques à l’original, HDR compris.\n- Fichiers jusqu’à 50 Mo, photos d’iPhone (HEIC) comprises.\n- Testé : après le nettoyage, Instagram n’a étiqueté aucune de nos photos ni vidéos.\n- Le bot ne supprime pas les filigranes visibles sur l’image.\n- C’est gratuit.\n## Bonus\nEnvoyez au bot le lien d’une vidéo TikTok ou Instagram : il la télécharge en qualité d’origine.\n[Supprimer l’étiquette IA maintenant →](https://t.me/AIMediaclean_bot?start=blog_fr_label)"
-  }
- ]
+  "lang": "fr",
+  "dir": "ltr",
+  "path": "",
+  "btn": "Ouvrir le bot dans Telegram →",
+  "articles": [
+    {
+      "slug": "supprimer-etiquette-ia-instagram",
+      "start": "blog_fr_label",
+      "title": "Comment supprimer l’étiquette « Infos IA » d’Instagram sur vos photos et vidéos",
+      "desc": "Pourquoi Instagram et TikTok ajoutent une étiquette IA à votre publication, d’où elle vient dans le fichier et comment la supprimer avant de publier, en une minute, avec un bot Telegram.",
+      "body": "Vous publiez une photo ou un Reel et « Infos IA » (anciennement « Made with AI ») apparaît sous votre nom. Cela arrive aux vidéos générées par IA, mais aussi à de vraies photos simplement retouchées dans un éditeur.\n## D’où vient l’étiquette\n- Les générateurs d’IA et les éditeurs dotés de fonctions IA écrivent des données cachées dans le fichier : C2PA (Content Credentials), XMP, IPTC, le nom du logiciel.\n- Instagram, Facebook et TikTok lisent ces données à l’envoi et ajoutent l’étiquette automatiquement.\n- Vous ne voyez pas ces données : de l’extérieur, le fichier paraît normal.\n## Comment supprimer l’étiquette\n- Ouvrez [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_fr_label) dans Telegram et appuyez sur Démarrer.\n- Envoyez la photo ou la vidéo, de préférence en tant que fichier pour que Telegram ne la compresse pas.\n- Quelques secondes plus tard, vous recevez un fichier propre, sans métadonnées IA. Publiez-le.\n## Bon à savoir\n- Aucune perte de qualité : les photos gardent leur taille, les vidéos du téléphone ne sont pas recompressées ; les images sont identiques à l’original, HDR compris.\n- Fichiers jusqu’à 50 Mo, photos d’iPhone (HEIC) comprises.\n- Testé : après le nettoyage, Instagram n’a étiqueté aucune de nos photos ni vidéos.\n- Le bot ne supprime pas les filigranes visibles sur l’image.\n- C’est gratuit.\n## Bonus\nEnvoyez au bot le lien d’une vidéo TikTok ou Instagram : il la télécharge en qualité d’origine.\n[Supprimer l’étiquette IA maintenant →](https://t.me/AIMediaclean_bot?start=blog_fr_label)"
+    },
+    {
+      "slug": "supprimer-etiquette-ia-tiktok",
+      "start": "blog_fr_tiktok",
+      "title": "Étiquette « Contenu généré par IA » sur TikTok : d’où elle vient et comment l’enlever de votre vidéo",
+      "desc": "Pourquoi TikTok marque automatiquement une vidéo comme générée par IA, quelles données du fichier le déclenchent et comment nettoyer la vidéo avant de la publier sans perte de qualité.",
+      "body": "TikTok ajoute automatiquement l’étiquette « Contenu généré par IA » quand il trouve dans le fichier des traces de génération. Souvent, elle apparaît sur des vidéos que vous avez seulement retouchées avec une IA : agrandissement, suppression de l’arrière-plan, un effet.\n## Pourquoi TikTok ajoute l’étiquette\n- Beaucoup d’outils d’IA et de logiciels de montage écrivent dans la vidéo des Content Credentials (C2PA) — un registre signé qui décrit comment le fichier a été créé.\n- TikTok lit ces informations à l’envoi et active l’étiquette automatiquement.\n- Le fichier peut aussi contenir des balises du logiciel et de l’appareil (XMP, IPTC).\n## Comment nettoyer la vidéo\n- Ouvrez [@AIMediaclean_bot](https://t.me/AIMediaclean_bot?start=blog_fr_tiktok) et envoyez la vidéo en tant que fichier.\n- Le bot supprime les métadonnées d’IA et vous renvoie un MP4 propre.\n- Les vidéos du téléphone ne sont pas réencodées : les images sont identiques à l’original, même qualité, le HDR est conservé.\n## Bon à savoir\n- Fichiers jusqu’à 50 Mo, jusqu’à 4 fichiers à la fois, c’est gratuit.\n- Le bot n’efface pas les filigranes visibles sur l’image.\n- Vous pouvez aussi envoyer le lien d’une vidéo TikTok — le bot la télécharge en qualité d’origine.\n- Si la vidéo est entièrement générée par IA, les règles de TikTok peuvent vous demander de l’indiquer vous-même.\n[Nettoyer ma vidéo maintenant →](https://t.me/AIMediaclean_bot?start=blog_fr_tiktok)"
+    }
+  ]
 }
