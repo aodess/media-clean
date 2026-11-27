@@ -39,6 +39,12 @@ http
     let p = decodeURIComponent(url.pathname);
     if (p === '/healthz') return send(res, 200, 'ok', TYPES['.txt']);
     if (p.includes('..')) return send(res, 400, 'bad request', TYPES['.txt']);
+    // Keep mask assets in Git, but temporarily disable the public catalogue and old links.
+    if (/^\/masks(?:\/|$|\.html$)/i.test(p)) {
+      const lang = url.searchParams.get('lang');
+      const target = ['ru', 'ar', 'zh'].includes(lang) ? '/' + lang + '/' : '/';
+      return send(res, 302, '', TYPES['.txt'], { Location: target, 'Cache-Control': 'no-store' });
+    }
     if (p.endsWith('/')) p += 'index.html';
     let file = path.join(ROOT, p);
     if (!path.extname(file)) {
